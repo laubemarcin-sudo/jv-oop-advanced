@@ -13,7 +13,6 @@ public class FigureSupplier {
         String color = colorSupplier.getRandomColor();
         int figureType = random.nextInt(FIGURE_COUNT);
 
-        // Losujemy wymiary od 1.0 do 11.0
         double val1 = random.nextDouble() * 10 + 1;
         double val2 = random.nextDouble() * 10 + 1;
         double val3 = random.nextDouble() * 10 + 1;

@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class RightTriangle extends Figure {
+public class NazwaFigury extends Figure implements AreaMeasurable {
     private double firstLeg;
     private double secondLeg;
 
