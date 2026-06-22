@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class NazwaFigury extends Figure implements AreaMeasurable {
+public class IsoscelesTrapezoid extends Figure implements AreaMeasurable, Drawable {
     private double sideA;
     private double sideB;
     private double height;
@@ -14,7 +14,7 @@ public class NazwaFigury extends Figure implements AreaMeasurable {
 
     @Override
     public double getArea() {
-        return ((sideA + sideB) * height) / 2;
+        return ((sideA + sideB) / 2) * height;
     }
 
     @Override

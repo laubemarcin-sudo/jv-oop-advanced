@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class NazwaFigury extends Figure implements AreaMeasurable {
+public class Rectangle extends Figure implements AreaMeasurable, Drawable {
     private double width;
     private double height;
 

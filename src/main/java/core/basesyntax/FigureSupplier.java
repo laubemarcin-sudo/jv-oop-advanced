@@ -28,8 +28,8 @@ public class FigureSupplier {
                 return new RightTriangle(val1, val2, color);
             case 4:
             default:
-                return new IsoscelesTrapezoid(val1, val2, val3,
-                        color);
+                IsoscelesTrapezoid trapezoid = new IsoscelesTrapezoid(val1, val2, val3, color);
+                return trapezoid;
         }
     }
 
