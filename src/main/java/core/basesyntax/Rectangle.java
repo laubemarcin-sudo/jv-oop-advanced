@@ -1,25 +1,25 @@
 package core.basesyntax;
 
 public class Rectangle extends Figure implements AreaMeasurable, Drawable {
-    private double width;
-    private double height;
+    private double firstSide;
+    private double secondSide;
 
-    public Rectangle(double width, double height, String color) {
+    public Rectangle(double firstSide, double secondSide, String color) {
         super(color);
-        this.width = width;
-        this.height = height;
+        this.firstSide = firstSide;
+        this.secondSide = secondSide;
     }
 
     @Override
     public double getArea() {
-        return width * height;
+        return firstSide * secondSide;
     }
 
     @Override
     public void draw() {
         System.out.println("Figure: rectangle, area: " + getArea()
-                + " sq. units, width: " + width
-                + " units, height: " + height
+                + " sq. units, firstSide: " + firstSide
+                + " units, secondSide: " + secondSide
                 + " units, color: " + getColor());
     }
 }
