@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Square extends Figure implements AreaMeasurable, Drawable {
-    private double side;
+    private final double side;
 
     public Square(double side, String color) {
         super(color);

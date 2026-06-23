@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class RightTriangle extends Figure implements AreaMeasurable, Drawable {
-    private double firstLeg;
-    private double secondLeg;
+    private final double firstLeg;
+    private final double secondLeg;
 
     public RightTriangle(double firstLeg, double secondLeg, String color) {
         super(color);

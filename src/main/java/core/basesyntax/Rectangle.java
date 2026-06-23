@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Rectangle extends Figure implements AreaMeasurable, Drawable {
-    private double firstSide;
-    private double secondSide;
+    private final double firstSide;
+    private final double secondSide;
 
     public Rectangle(double firstSide, double secondSide, String color) {
         super(color);
