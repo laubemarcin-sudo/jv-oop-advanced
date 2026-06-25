@@ -16,19 +16,13 @@ public class FigureSupplier {
         String color = colorSupplier.getRandomColor();
         int figureType = random.nextInt(FIGURE_COUNT);
 
-        switch (figureType) {
-            case 0:
-                return new Circle(getRandomValue(), color);
-            case 1:
-                return new Square(getRandomValue(), color);
-            case 2:
-                return new Rectangle(getRandomValue(), getRandomValue(), color);
-            case 3:
-                return new RightTriangle(getRandomValue(), getRandomValue(), color);
-            case 4:
-            default:
-                return new IsoscelesTrapezoid(getRandomValue(), getRandomValue(), getRandomValue(), color);
-        }
+        return switch (figureType) {
+            case 0 -> new Circle(getRandomValue(), color);
+            case 1 -> new Square(getRandomValue(), color);
+            case 2 -> new Rectangle(getRandomValue(), getRandomValue(), color);
+            case 3 -> new RightTriangle(getRandomValue(), getRandomValue(), color);
+            default -> new IsoscelesTrapezoid(getRandomValue(), getRandomValue(), getRandomValue(), color);
+        };
     }
 
     public Figure getDefaultFigure() {
