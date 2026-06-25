@@ -21,7 +21,12 @@ public class FigureSupplier {
             case 1 -> new Square(getRandomValue(), color);
             case 2 -> new Rectangle(getRandomValue(), getRandomValue(), color);
             case 3 -> new RightTriangle(getRandomValue(), getRandomValue(), color);
-            default -> new IsoscelesTrapezoid(getRandomValue(), getRandomValue(), getRandomValue(), color);
+            default -> new IsoscelesTrapezoid(
+                    getRandomValue(),
+                    getRandomValue(),
+                    getRandomValue(),
+                    color
+            );
         };
     }
 
@@ -33,3 +38,4 @@ public class FigureSupplier {
         return random.nextDouble() * RANDOM_BOUND + RANDOM_OFFSET;
     }
 }
+
